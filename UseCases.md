@@ -10,12 +10,12 @@
 
 ### Activities:
 1. Parents
- * Activating appliances at specific times
+   * Activating appliances at specific times
 2. Infants
- * Auto crib rocking at certain volume levels
+   * Auto crib rocking at certain volume levels
 3. General
- * Automating temperature
- * Lights on/off
+   * Automating temperature
+   * Lights on/off
 
 ### Use Cases:
 #### Lights:
