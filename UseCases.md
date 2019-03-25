@@ -39,7 +39,7 @@
  * A loss of signal from the user’s device to the Zephyr system.
 
 ##### Diagram
-![Lights Use Case](C:\Users\Maxim\github\Zephyr22\Lights.png)
+![Light Use Case](https://user-images.githubusercontent.com/32828119/54890335-dcdba380-4e76-11e9-8aa3-73c9c5a454b0.png)
 
 #### Child Rocking crib
 * Introduction: With younger children in the house, many times when they wake up all the children will require is to be rocked until they fall asleep. With Zephyr the system will track the noise level from the crib (and by extension the child) and rock the crib if the noise level exceeds a set level. If the child is still making noise after a set period of time the Zephyr System will alert the parents through their mobile device.
