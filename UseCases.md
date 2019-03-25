@@ -1,4 +1,4 @@
-## Group 22
+## Zephyr Use Cases
 ### Group 22: Kyle Meyer, Maxim Levin, Carolyn Perniciaro
 
 ### Users:
@@ -38,8 +38,8 @@
 * Failed End Condition:
  * A loss of signal from the user’s device to the Zephyr system.
 
-##### Diagram
-![Light Use Case](https://user-images.githubusercontent.com/32828119/54890335-dcdba380-4e76-11e9-8aa3-73c9c5a454b0.png)
+#### Diagram
+![Lights Use Case](https://user-images.githubusercontent.com/32828119/54890535-cd108f00-4e77-11e9-953d-be32a740537c.png)
 
 #### Child Rocking crib
 * Introduction: With younger children in the house, many times when they wake up all the children will require is to be rocked until they fall asleep. With Zephyr the system will track the noise level from the crib (and by extension the child) and rock the crib if the noise level exceeds a set level. If the child is still making noise after a set period of time the Zephyr System will alert the parents through their mobile device.
@@ -61,7 +61,8 @@
 * Failed End Condition:
  * A parent’s device is not able to be reached at the time of notification or alert.
 
-##### Diagram
+#### Diagram
+![Rocking Crib Use Case](https://user-images.githubusercontent.com/32828119/54890406-3fcd3a80-4e77-11e9-8fa8-12d028f9c26a.png)
 
 #### Automatic Timer
 * Introduction: In day to day life there are many menial and regular operations that a family does, like activating appliances, cleaning, and washing, that can be assisted and automated through Zephyr. Through collecting and sorting through user data, Zephyr can automatically activate appliances, as well as send autonomous vacuum cleaners to clean the house when Zephyr detects there are no users in the house.
@@ -85,7 +86,8 @@ Zephyr will track and collect location data of users
 * Failure End Condition:
  * Appliances are activated at time that are detrimental to the users.
 
-##### Diagram
+#### Diagram
+![Automatic Timer Use Case](https://user-images.githubusercontent.com/32828119/54890412-45c31b80-4e77-11e9-9265-9a4d1b56e6aa.png)
 
 #### In-house Temperature Control
 * Introduction: In an attempt to save money, families are exploring more and more options to to be frugal. With the assistance of user tracking, Zephyr will attempt to use this technology to reduce the amount families spend by automatically regulating temperature based on time of day, time of year, and user statistics.
@@ -113,4 +115,5 @@ Zephyr will track and collect location data of users
   * Zephyr is not able to modify the temperature of the house to the user’s patterns.
 The temperature system will need to totally re-calibrated.
 
-##### Diagram
+#### Diagram
+![Temperature Use Case](https://user-images.githubusercontent.com/32828119/54890542-d699f700-4e77-11e9-848a-2fa404b446c5.png)
