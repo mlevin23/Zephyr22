@@ -16,27 +16,6 @@ bool connectDevice(int id)
   ENDIF
 }
 
-// This function will take an appliance ID from the user and will send an activation signal from the server to the appliance.
-void manualActivate(int appID)
-{
-  IF establishConnection()
-    send activation signal to appID
-  ELSE
-    say "server not found"
-}
-
-// This function will take the average activation time of all appliances, and will activate it if the time of day is equal to the average
-activation time of the appliance, then it will send an activation signal to the appliance
-void autoActivate()
-{
-  FOR each appliance
-    get average activation time
-    IF avgActTime == current time
-      send activation signal to app[i]
-    ENDIF
-  ENDFOR
-}
-
 // This function will add a user a new ID (increments statically), and requires a power-level and name. Power levels are arrranged as follows:
 1) Child (access to very few functions)
 2) Grandparent
@@ -84,6 +63,27 @@ double[] locateUsers()
     enable bluetooth
     pull bluetooth data
 
+}
+
+// This function will take an appliance ID from the user and will send an activation signal from the server to the appliance.
+void manualActivate(int appID)
+{
+  IF establishConnection()
+    send activation signal to appID
+  ELSE
+    say "server not found"
+}
+
+// This function will take the average activation time of all appliances, and will activate it if the time of day is equal to the average
+activation time of the appliance, then it will send an activation signal to the appliance
+void autoActivate()
+{
+  FOR each appliance
+    get average activation time
+    IF avgActTime == current time
+      send activation signal to app[i]
+    ENDIF
+  ENDFOR
 }
 
 // This function will check every x seconds, where x is set in the main settings,  where a user is in the house, and will enable the lights in the house
