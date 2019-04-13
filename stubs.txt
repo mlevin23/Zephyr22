@@ -16,6 +16,27 @@ bool connectDevice(int id)
   ENDIF
 }
 
+// This function will take an appliance ID from the user and will send an activation signal from the server to the appliance.
+void manualActivate(int appID)
+{
+  IF establishConnection()
+    send activation signal to appID
+  ELSE
+    say "server not found"
+}
+
+// This function will take the average activation time of all appliances, and will activate it if the time of day is equal to the average
+activation time of the appliance, then it will send an activation signal to the appliance
+void autoActivate()
+{
+  FOR each appliance
+    get average activation time
+    IF avgActTime == current time
+      send activation signal to app[i]
+    ENDIF
+  ENDFOR
+}
+
 // This function will add a user a new ID (increments statically), and requires a power-level and name. Power levels are arrranged as follows:
 1) Child (access to very few functions)
 2) Grandparent
@@ -47,7 +68,6 @@ string pullData(int ID, string parameter)
       data = (data)
   ENDIF
   return data;
-
 }
 
 // The function below will constantly update the server to the location of all connected users with the format <id, lattitude, longetude>,
@@ -80,6 +100,14 @@ void enableLights()
       ENDIF
     ENDFOR
   ENDWHILE
+}
+
+// The function below will take a sound level from a user, and if the sound level from the sensor exceeds it, it will alert the parent user. The function
+also requires a parent id to alert to. This will allow parents to choose who will go to the infant.
+void alertParent(int alertLevel, int parentID)
+{
+  IF sensorLevel > alertLevel
+    connectdevice(parentID)
 }
 
 // This function will check the temperature in household, as long as a connection exists. This will connect from a user device to the server.
