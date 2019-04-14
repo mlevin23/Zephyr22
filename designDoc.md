@@ -35,13 +35,10 @@ ______
 [Stubs located here](https://github.com/mlevin23/Zephyr22/blob/master/stubs.txt)
 
 ### Languages
-1. .
-  - .
-  - .
-2. .
-  - .
-  - .
+1. C
+  - The zephyr hello world sample as well as other samples are coded in C. This could potentially mean that we could write other applications for Zephyr in C.
+2. Python
+  - Python is a ubiquitous coding language that is used in almost everything, and it seems that some is found in Zephyr. Writing in Python would be simpler as Python is a higher level language, and could allow us to focus more on the actual important details of our functions.
 3. Skill gaps
   - We are hoping to use Rasberry Pi to run our simulation but only one member of our team has experience with is
   - We do not have a vast knowledge of the zephyr program
-  - .
