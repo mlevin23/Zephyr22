@@ -2,7 +2,7 @@
 - The program will be run in qemu, which will require either a mac or a linux pc. The code will be built in the "zephyr" folder of the zephyrproject directory, and can be built and run using west. The zephyr project requires a c toolchain (we used GNU ARRM Embedded), and will require qemu. Additionally the development environment for zephyr will have to be set up on the machine.
 - west build -b qemu_x86 "project" // This will be the command to build the directory, with "project" being the name of the project that we create.
 - west build -t run // This will actually run the project once it is built with the above command.
-- How will data be saved?
+- Data will saved to either a server, or directly into the directory. The only worry we have with saving the data into the directory is that it could increase the size too much. However by saving data directly to the directory it would make simulating the home easier as we would not have to repopulate the home system with dummy data.
 
 ## Functional Requirements
 1. Lights
