@@ -2,11 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
+long changeADJTMP(long adjTMP);
+
 void main(){
     int choice = 0; //int
     long newTMP = 0.0; //float
     long currentTMP = 68.0; //Good starting point to initialize the temprature
     long adjTMP = 0.0;
+    long newADJTMP = 0.0;
     
     printk("What would you like to do? %s\n");
     printk("1. Adjust Temperature %s\n");
@@ -34,11 +37,9 @@ void main(){
                         printk("What would you like to adjust the morning temperature to?%s");
                         scanf("%d", adjTMP);
                         for ( // TOD = MORNING ) {
-                            int adjTMPVAL = adjTMP;
-                            adjTMPVAL = currentTMP;
-                        }
-                        
-                    
+                            newADJTMP = changeADJTMP(adjTMP);
+                            
+                        }    
                     break;
                     case 2: // Afternoon
                     case 3: //Evening
@@ -48,4 +49,10 @@ void main(){
             //Do we want to create a menu here?
             //How should we adjust the TOD temprature?            
     }
+}
+                            
+long changeADJTMP(long adjTMP){
+    int adjTMPVAL;
+    //TODO
+    return adjTMPVAL;
 }
