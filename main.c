@@ -6,6 +6,7 @@ long changeADJTMP(long adjTMP);
 
 void main(){
     int choice = 0; //int
+    int choice2 = 0;
     long newTMP = 0.0; //float
     long currentTMP = 68.0; //Good starting point to initialize the temprature
     long adjTMP = 0.0;
@@ -39,7 +40,7 @@ void main(){
                     case 1: // M0RNING 
                         printk("What would you like to adjust the morning temperature to?");
                         scanf("%d", adjTMP);
-                        for ( 0 < tm_hour <= 11 ) {
+                        if ( 0 < tm_hour <= 11 ) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         }    
@@ -48,7 +49,7 @@ void main(){
                     case 2: // AFTERNOON
                         printk("What would you like to adjust the morning temperature to?");
                         scanf("%d", adjTMP);
-                        for ( 11 < tm_hour <= 17 ) {
+                        if ( 11 < tm_hour <= 17 ) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         } 
@@ -57,7 +58,7 @@ void main(){
                     case 3: // EVENING
                         printk("What would you like to adjust the morning temperature to?");
                         scanf("%d", adjTMP);
-                        for ( 17 < tm_hour <= 23) {
+                        if ( 17 < tm_hour <= 23) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         }    
@@ -68,7 +69,7 @@ void main(){
                      
     }
 }
-                            
+}                            
 long changeADJTMP(long adjTMP){
     long adjTMPVAL;
     //TODO
