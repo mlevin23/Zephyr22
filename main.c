@@ -10,6 +10,7 @@ void main(){
     long currentTMP = 68.0; //Good starting point to initialize the temprature
     long adjTMP = 0.0;
     long newADJTMP = 0.0;
+    int tm_hour; // hours in range of 0 to 23
     
     printk("What would you like to do? %s\n");
     printk("1. Adjust Temperature %s\n");
@@ -22,9 +23,11 @@ void main(){
             scanf("%ld", newTMP); //Since we are using printk, do we need to use scank instead of scanf?
             if(newTMP > currentTMP){
                 //ACTIVATE HEATING;
+                printk("am heating");
             }
             else if(newTMP < currentTMP){
                 //ACTIVATE COOLING;
+                printk("am cooling");
             }
             break;            
       case 2:
@@ -33,28 +36,28 @@ void main(){
             scanf("%d", choice2);
             
             switch(choice2){
-                    case 1: // Morning
+                    case 1: // M0RNING 
                         printk("What would you like to adjust the morning temperature to?%s");
                         scanf("%d", adjTMP);
-                        for ( // TOD = MORNING ) {
+                        for ( 0 < tm_hour <= 11 ) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         }    
                         break;
                             
-                    case 2: // Afternoon
+                    case 2: // AFTERNOON
                         printk("What would you like to adjust the morning temperature to?%s");
                         scanf("%d", adjTMP);
-                        for ( // TOD = AFTERNOON ) {
+                        for ( 11 < tm_hour <= 17 ) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         } 
                         break;
                             
-                    case 3: //Evening
+                    case 3: // EVENING
                         printk("What would you like to adjust the morning temperature to?%s");
                         scanf("%d", adjTMP);
-                        for ( // TOD = EVENING ) {
+                        for ( 17 < tm_hour <= 23) {
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         }    
