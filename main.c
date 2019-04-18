@@ -40,19 +40,34 @@ void main(){
                             newADJTMP = changeADJTMP(adjTMP);
                             
                         }    
-                    break;
+                        break;
+                            
                     case 2: // Afternoon
+                        printk("What would you like to adjust the morning temperature to?%s");
+                        scanf("%d", adjTMP);
+                        for ( // TOD = AFTERNOON ) {
+                            newADJTMP = changeADJTMP(adjTMP);
+                            
+                        } 
+                        break;
+                            
                     case 3: //Evening
-                    
+                        printk("What would you like to adjust the morning temperature to?%s");
+                        scanf("%d", adjTMP);
+                        for ( // TOD = EVENING ) {
+                            newADJTMP = changeADJTMP(adjTMP);
+                            
+                        }    
+                        break;
+                            
             break;
                
-            //Do we want to create a menu here?
-            //How should we adjust the TOD temprature?            
+                     
     }
 }
                             
 long changeADJTMP(long adjTMP){
-    int adjTMPVAL;
+    long adjTMPVAL;
     //TODO
     return adjTMPVAL;
 }
