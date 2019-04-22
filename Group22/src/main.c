@@ -11,8 +11,7 @@
 
 void main(void) {
         console_getline_init();
-
-	int choice = 0; //int
+	int choice = 0;
 	int choice2 = 0;
 	long newTMP = 0.0; //float
 	long currentTMP = 68.0; //Good starting point to initialize the temprature
@@ -25,5 +24,23 @@ void main(void) {
 	printk("2. Adjust TOD Temperature \n");
 	char *s = console_getline();
 
-	printk("line: %s\n", s);
+	choice = atoi(s);
+	switch(choice){
+      		case 1:
+            		printk("What would you like to change the temp to?\n");
+            		char *c = console_getline();
+			newTMP = atoi(c);
+			if(newTMP > currentTMP){
+                //ACTIVATE HEATING;
+                	printk("am heating");
+            		}
+            	else if(newTMP < currentTMP){
+                //ACTIVATE COOLING;
+            		printk("am cooling");
+            		}
+		break; 
+
+		}
+	printk("done");
+	return 0;
 }
