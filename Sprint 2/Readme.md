@@ -12,7 +12,7 @@ Once it is downloaded clone our repository using:
 
 git clone https://github.com/mlevin23/Zephyr22.git
 ***************
-Build our project by navigating into the Zephyrproject/zephyr folder and use the command:
+First copy and paste our Group22 folder into the zephyrproject/zephyr/samples folder, then build our project by navigating into the Zephyrproject/zephyr folder and use the command:
 
 west build -b qemu_x86 samples/Group22
 ***************
