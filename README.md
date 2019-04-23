@@ -23,21 +23,24 @@ west build -t run
 ****************
 ****************
 
-Things we have completed:
+### Things we have completed:
  - Skeleton for a use case(temperature), as well as a method to take in and modify/compare values in qemu. This creates an outline for the remaining use cases.
  - Basic understanding of the software and development environment that we are working in.
  - Our team has further developed communication skills which has in turn understand aided in our completion of these sprints.
  
-Things we still need:
- - We need to flesh out the skeletons of our use cases and implement the 
- -
- -
- -
+### Things we still need:
+ - We need to flesh out the skeletons of our use cases and implement the functions.
+ - Debug our skeleton
+ - Develop a frontend for use by the users 
+ - Develop a way to interact with various Zephyr sensors
+ 
+### Future things to add:
+ - If you were to have sensors, you could read input and then read out the input to a user with the ability for the user to interact with the output
  
 ****************
 ****************
 
-Overwhelming technical issues:
+### Overwhelming technical issues:
  - We looked through Zephyrs net tools as well as looked at their networking samples
  - We have encountered issues with connecting our sample to a web tool as well as figuring out how to network with Qemu. Additionally we are encoutering issues with understanding Qemu's compiler. From what we understand, it uses a modified version of C. 
  - We tried modifying the function as well as modifying the overall schema to make the functions work better. We tried swapping different libraries however it seems the issue is coming from qemu's compiler not recognizing character to integer conversions.
