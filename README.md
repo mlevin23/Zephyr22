@@ -23,6 +23,20 @@ west build -t run
 ****************
 ****************
 
+Things we have completed:
+ - Skeleton for a use case(temperature), as well as a method to take in and modify/compare values in qemu. This creates an outline for the remaining use cases.
+ - Basic understanding of the software and development environment that we are working in.
+ - Our team has further developed communication skills which has in turn understand aided in our completion of these sprints.
+ 
+Things we still need:
+ - We need to flesh out the skeletons of our use cases and implement the 
+ -
+ -
+ -
+ 
+****************
+****************
+
 Overwhelming technical issues:
  - We looked through Zephyrs net tools as well as looked at their networking samples
  - We have encountered issues with connecting our sample to a web tool as well as figuring out how to network with Qemu. Additionally we are encoutering issues with understanding Qemu's compiler. From what we understand, it uses a modified version of C. 
