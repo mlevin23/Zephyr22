@@ -25,69 +25,72 @@ void main(void) {
     
 	printk("What would you like to do? \n");
 	printk("1. Adjust Temperature \n");
-	printk("2. Adjust TOD Temperature \n");
-	char *s = console_getline();
-
-	choice = atoi(s);
+	printk("2. Adjust the Time of Day Temperatures \n");
+	char *a = console_getline();
+	choice = atoi(a);
 	switch(choice){
       		case 1:
             		printk("What would you like to change the temp to?\n");
-            		*s = console_getline();
-			newTMP = atoi(s);
+            		char *b = console_getline();
+			newTMP = atoi(b);
 			if(newTMP > currentTMP){
                 //ACTIVATE HEATING;
-                	printk("am heating\n");
+                	printk("Activating heating\n");
             		}
             	else if(newTMP < currentTMP){
                 //ACTIVATE COOLING;
-            		printk("am cooling\n");
+            		printk("Activating cooling\n");
             		}
 		break; 
 
 	case 2:
-            printk("How would you like to adjust the TOD?\n");
-            printk("Would you like to adjust the \n1. Morning Temperature\n2.Afternoon Temperature\n3.Evening Temperature\n?");
-            *s = console_getline();
-            choice2 = atoi(s);
+            printk("Adjusting the time of the day temperatures.\n");
+            printk("Would you like to adjust the: \n1. Morning Temperature\n2. Afternoon Temperature\n3. Evening Temperature\n");
+            char *c = console_getline();
+            choice2 = atoi(c);
 
             
 		switch(choice2){
 			case 1: // M0RNING 
-			printk("What would you like to adjust the morning temperature to?");
-			*s = console_getline();
-			adjTMP = atol(s);
+			printk("What would you like to adjust the morning temperature to?\n");
+			char *d = console_getline();
+			adjTMP = atoi(d);
 			if ( 0 < tm_hour && tm_hour <= 11 ) {
 				newADJTMP = changeADJTMP(adjTMP);    
 			}    
+                        printk("New morning temperature set to: %li \n", adjTMP);
 			break;
                             
 			case 2: // AFTERNOON
-			printk("What would you like to adjust the morning temperature to?");
-			*s = console_getline();
-			adjTMP = atol(s);
+			printk("What would you like to adjust the afternoon temperature to?\n");
+			char *e = console_getline();
+			adjTMP = atoi(e);
 			if ( 11 < tm_hour && tm_hour <= 17 ) {
 				newADJTMP = changeADJTMP(adjTMP);
 			} 
+                        printk("New afternoon temperature set to: %li \n", adjTMP);
 			break;
                           
 			case 3: // EVENING
-			printk("What would you like to adjust the morning temperature to?");
-			*s = console_getline();
-			adjTMP = atol(s);
+			printk("What would you like to adjust the evening temperature to?\n");
+			char *f = console_getline();
+			adjTMP = atoi(f);
 			if ( 17 < tm_hour && tm_hour <= 23) {
 				newADJTMP = changeADJTMP(adjTMP);            
 			}    
-                	break;
+                        printk("New evening temperature set to: %li \n", adjTMP);
+		       	break;
                             
         	break;            
 		}	
+
 	}
-        printk("done");
+        printk("Exiting Successfully.");
 }
 
 
-long changeADJTMP(long adjTMP){
-    long adjTMPVAL = adjTMP;
+int changeADJTMP(int adjTMP){
+    int adjTMPVAL = adjTMP;
     // TODO
     return adjTMPVAL;
 }
