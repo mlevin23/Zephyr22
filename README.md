@@ -19,3 +19,13 @@ west build -b qemu_x86 samples/Group22
 Then run the program using:
 
 west build -t run
+
+****************
+****************
+
+Overwhelming technical issues:
+ - We looked through Zephyrs net tools as well as looked at their networking samples
+ - We have encountered issues with connecting our sample to a web tool as well as figuring out how to network with Qemu. Additionally we are encoutering issues with understanding Qemu's compiler. From what we understand, it uses a modified version of C. 
+ - We tried modifying the function as well as modifying the overall schema to make the functions work better. We tried swapping different libraries however it seems the issue is coming from qemu's compiler not recognizing character to integer conversions.
+ - We would benefit from meeting with the other Zephyr groups and brainstorming different methods to create a solution.
+ - Maxim went to office hours on April 22nd.
