@@ -1,4 +1,4 @@
-# Sprint 1 Design Document: Zephyr Group 22
+# Sprint 2 Design Document: Zephyr Group 22
 ## Deployment environment
 - The program will be run in qemu, which will require either a mac or a linux pc. The code will be built in the "zephyr" folder of the zephyrproject directory, and can be built and run using west. The zephyr project requires a c toolchain (we used GNU ARRM Embedded), and will require qemu. Additionally the development environment for zephyr will have to be set up on the machine.
 - west build -b qemu_x86 "project" // This will be the command to build the directory, with "project" being the name of the project that we create.
