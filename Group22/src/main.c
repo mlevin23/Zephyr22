@@ -8,6 +8,10 @@
 #include <zephyr.h>
 #include <misc/printk.h>
 #include <console.h>
+#include <stdlib.h>
+#include <time.h>
+
+long changeADJTEMP(long adjTMP);
 
 void main(void) {
         console_getline_init();
@@ -51,7 +55,7 @@ void main(void) {
 			case 1: // M0RNING 
 			printk("What would you like to adjust the morning temperature to?");
 			*s = console_getline();
-			adjTMP = atoi(s);
+			adjTMP = atol(s);
 			if ( 0 < tm_hour && tm_hour <= 11 ) {
 				newADJTMP = changeADJTMP(adjTMP);    
 			}    
@@ -60,7 +64,7 @@ void main(void) {
 			case 2: // AFTERNOON
 			printk("What would you like to adjust the morning temperature to?");
 			*s = console_getline();
-			adjTMP = atoi(s);
+			adjTMP = atol(s);
 			if ( 11 < tm_hour && tm_hour <= 17 ) {
 				newADJTMP = changeADJTMP(adjTMP);
 			} 
@@ -69,7 +73,7 @@ void main(void) {
 			case 3: // EVENING
 			printk("What would you like to adjust the morning temperature to?");
 			*s = console_getline();
-			adjTMP = atoi(s);
+			adjTMP = atol(s);
 			if ( 17 < tm_hour && tm_hour <= 23) {
 				newADJTMP = changeADJTMP(adjTMP);            
 			}    
