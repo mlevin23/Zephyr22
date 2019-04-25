@@ -20,3 +20,6 @@ Everyday, Jim leaves for work at 7:30AM in order to avoid traffic. Before this, 
 
 ***********************
 Our last system is automatic light sensors which turn off when homeowners leave the room and turn on when they enter the room. This allows for homeowner to wake up to their lights being slowly dimmed on or come home at night time to an already lit home. This will involve the user to interact with an interactive map of their home and picking which rooms they would like to have the lights turned on in, or turned off in, and at what times. Not only does this allow the homeowner a safe, well-lit home at ease, but it will also cut down on their electric bill by automatically turning off lights in rooms that are not in use. 
+
+#### Example
+Jim is a forgetful father who forgets to turn off the lights every time he leaves a room. He has been racking up the electricity bill for months by leaving lights on whenever he leaves the room or leaves the house for work. With Zephyr the lights will be automatically turned off anytime a person leaves the room, reducing the amount the family has to spend on electricity, saving Jim and Martha's marriage, and letting everyone live their own happily ever after. 
