@@ -8,4 +8,6 @@ Our front end will consist of a login page with all the user profiles already pr
 
 #### Lighting Page
 
+Our lighting page will consists of three buttons: Upstairs, Ground Level, and Basement. When each button is pressed, a floor layout of the selected floor with appear. In order to turn lights on/off in a specific room, a user will press the desired room. Rooms with glowing lightbulbs signal that the room has the lights turned on. Rooms without glowing lightbulbs signal that the room has the lights switched off. 
+
 #### Appliances Page
