@@ -13,3 +13,5 @@ If the user navigates to the temperature page, they will be able to adjust the c
 Our lighting page will consist of three buttons: Upstairs, Ground Level, and Basement. When each button is pressed, a floor layout of the selected floor will appear. In order to turn lights on/off in a specific room, a user will press the desired room. Rooms with glowing lightbulbs signal that the room has the lights turned on. Rooms without glowing lightbulbs signal that the room has the lights switched off. 
 
 #### Appliances Page
+
+The appliances page will display all the connected appliances as well as connected devices that are able to interface with the zephyr system, such as cell phone or computer. As far the appliances, users will have the capability to turn the appliances on and off and view their current status.
