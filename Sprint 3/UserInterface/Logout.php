@@ -2,7 +2,7 @@
 
 	
 	if(!session_start()) {
-		header("Location: Cmpvm5Final_Error.php");
+		header("Location: Error.php");
 		exit;
 	}
 
