@@ -8,7 +8,7 @@
     $loggedin = empty($_SESSION['loggedin']) ? '' : $_SESSION['loggedin'];
       
     if ($loggedin) {
-        header("Location: Cmpvm5Final_Resources.php"); /* change to welcome page file */
+        header("Location: WelcomePage.php"); 
         exit;
     }
     
@@ -27,7 +27,7 @@
 		if ($username == "test" && $password == "pass") {
             $_SESSION['loggedin']=$username;
             
-			header("Location: Cmpvm5Final_Resources.php");  /* change to welcome page file */
+			header("Location: WelcomePage.php");  /* change to welcome page file */
 			exit;
 		} else {
 			$error = 'Error: Incorrect username or password';
