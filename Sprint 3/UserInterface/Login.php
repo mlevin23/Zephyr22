@@ -27,7 +27,7 @@
 		if ($username == "test" && $password == "pass") {
             $_SESSION['loggedin']=$username;
             
-			header("Location: WelcomePage.php");  /* change to welcome page file */
+			header("Location: WelcomePage.php"); 
 			exit;
 		} else {
 			$error = 'Error: Incorrect username or password';
