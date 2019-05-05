@@ -3,7 +3,7 @@
 <head>
 	<title>Lighting</title>
     <meta charset="UTF-8">
-    <link href="Styles/newZephyr.css" rel="stylesheet" type="text/css">
+    <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
     <link href="Styles/verticalTabs.css" rel="stylesheet" type="text/css">
     <script>
         function openTab(evt, tabName) {

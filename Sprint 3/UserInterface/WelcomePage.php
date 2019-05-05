@@ -3,7 +3,7 @@
 <head>
 	<title>Home</title>
     <meta charset="UTF-8">
-    <link href="Styles/newZephyr.css" rel="stylesheet" type="text/css">
+    <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
 </head>
 <body class="backGround">
     <div class="topnav">

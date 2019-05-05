@@ -3,7 +3,7 @@
 <head>
 	<title>Temperature</title>
     <meta charset="UTF-8">
-    <link href="Styles/newZephyr.css" rel="stylesheet" type="text/css">
+    <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
 </head>
 <body class="backGround">
     <div class="topnav">
@@ -14,11 +14,11 @@
     </div>
     
     <div>
-        <h1 class="header">Zephyr Smart Homes</h1>
+        <h1 class="header">Temperature</h1>
     </div>
     
     <div id="homePlaque">
-        <p>Welcome Maxim, Carolyn and Kyle</p>
+        <p></p>
     </div>
 </body>
 </html>
