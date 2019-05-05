@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Appliances</title>
     <meta charset="UTF-8">
     <link href="Styles/zephyr.css" rel="stylesheet" type="text/css">
 </head>
 <body class="backGround">
     <div class="topnav">
-        <a class="active" href="index.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="Lighting.php">Lighting</a>
-        <a href="Appliances.php">Appliances</a>
+        <a class="active" href="Appliances.php">Appliances</a>
         <a href="Temperature.php">Temperatures</a>
     </div>
     
