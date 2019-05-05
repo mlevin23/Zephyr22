@@ -3,7 +3,7 @@
 <head>
 	<title>Lighting</title>
     <meta charset="UTF-8">
-    <link href="Styles/zephyr.css" rel="stylesheet" type="text/css">
+    <link href="Styles/newZephyr.css" rel="stylesheet" type="text/css">
     <link href="Styles/verticalTabs.css" rel="stylesheet" type="text/css">
     <script>
         function openTab(evt, tabName) {
@@ -41,7 +41,12 @@
 
     <div id="Upstairs" class="tabcontent">
         <h3 class="myHeaders">Upstairs</h3>
-        <p class="myText">Light 1</p>
+        <p class="myText">Master Bedroom</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p class="myText">Bathroom</p>
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
@@ -50,12 +55,40 @@
     
     <div id="Ground" class="tabcontent">
         <h3 class="myHeaders">Ground</h3>
-        <p class="myText">I started this busniess 5 years ago in the summer of 2013 and have done it every summer since. Over the last 5 years I have built up a progessively longer list of annual customers who are consistantly happy with the cleaning preformance. This season marks the first one with this new website I created to help answer any preliminary questions you may have. I am currently teaching my brother about this process as he will be taking over the busniess in a few years after I graduate from Mizzou.</p> 
+        <p class="myText">Kitchen</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p class="myText">Dining Room</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p class="myText">Living Room</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p class="myText">Porch</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </div>
     
     <div id="Basement" class="tabcontent">
         <h3 class="myHeaders">Basement</h3>
-        <p class="myText">We specialize in pressure washing the carpet in the pontoon boats, as well as the hard top if the boat has one. In addition, boat seats will also be cleaned using mildew and stain remover, as those are proven to have the best results. We do not powerwash any of the furniture on boat, as it can tear vynl seating.</p>
+        <p class="myText">Stair Light</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p class="myText">Main Light</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 	<title>Temperature</title>
     <meta charset="UTF-8">
-    <link href="Styles/zephyr.css" rel="stylesheet" type="text/css">
+    <link href="Styles/newZephyr.css" rel="stylesheet" type="text/css">
 </head>
 <body class="backGround">
     <div class="topnav">
