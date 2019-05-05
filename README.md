@@ -1,48 +1,38 @@
 # Zephyr22
 This is the Zephyr Project for Group 22.
 
-For our project we decided to use Qemu. We believed this to be the best option because it would allow us to emulate boards across all machines, as well as emulate many different boards. 
+For our project we decided to use Qemu, a leshan server, and an ec2 instance. We believed this to be the best option because while it may have more moving parts, it allows us to create distinct pieces that are separate from each other for future developing.
 
 ## How to instructions:
-We built our Zephyr home system to work for Ubuntu 18.04. To build the repository set up your environment here:
 
-https://docs.zephyrproject.org/latest/getting_started/
-***************
-Once it is downloaded clone our repository using:
+To see both parts of our project the following is required.
+#### Part 1:
+ 1. First go to: https://github.com/TNice/Lashaen-Server-Software-Engineering and complete the setting up of net tools with qemu.
+ 2. Clone our repository with "git clone https://github.com/mlevin23/Zephyr22.git"
+ 3. Navigate to the sprint 3 folder and launch the leshan server with "java -jar leshan-server-demo.jar"
+ 4. Once this is done navigate to localhost:8080 and you will be able to see a json object of the names of the clients that are connected to the leshan server.
+ 
+#### Part 2:
+To visit the front end of our server, visit the following link:
+http://ec2-3-17-62-112.us-east-2.compute.amazonaws.com/ 
 
-git clone https://github.com/mlevin23/Zephyr22.git
-***************
-First copy and paste our Group22 folder into the zephyrproject/zephyr/samples folder, then build our project by navigating into the Zephyrproject/zephyr folder and use the command:
+To log in the username is: "test" and the password is: "pass"
 
-west build -b qemu_x86 samples/Group22
-***************
-Then run the program using:
-
-west build -t run
+We plan to implement a full set of user login instructions in sprint 4. To see all of our issues and where we currently are in the development process, please visit our issues tab.
 
 ****************
 ****************
 
 ### Things we have completed:
- - Skeleton for a use case(temperature), as well as a method to take in and modify/compare values in qemu. This creates an outline for the remaining use cases.
- - Basic understanding of the software and development environment that we are working in.
- - Our team has further developed communication skills which has in turn understand aided in our completion of these sprints.
+ - We have uploaded our front end up to the ec2 instance above, as well as created a method for reading the connected clients to our leshan server.
  
 ### Things we still need:
- - We need to flesh out the skeletons of our use cases and implement the functions.
- - Debug our skeleton
- - Develop a frontend for use by the users 
- - Develop a way to interact with various Zephyr sensors
+ - We need to all the use cases for front end. Appliances is currently being developed and temperature will be worked on next.
+ - We need to complete the general backend prototype for passing connected clients and then specialize that fr each of our use cases.
  
-### Future things to add:
- - If you were to have sensors, you could read input and then read out the input to a user with the ability for the user to interact with the output
  
 ****************
 ****************
 
 ### Overwhelming technical issues:
- - We looked through Zephyrs net tools as well as looked at their networking samples
- - We have encountered issues with connecting our sample to a web tool as well as figuring out how to network with Qemu. Additionally we are encoutering issues with understanding Qemu's compiler. From what we understand, it uses a modified version of C. 
- - We tried modifying the function as well as modifying the overall schema to make the functions work better. We tried swapping different libraries however it seems the issue is coming from qemu's compiler not recognizing character to integer conversions.
- - We would benefit from meeting with the other Zephyr groups and brainstorming different methods to create a solution.
- - Maxim went to office hours on April 22nd.
+ - The Leshan server does not have any form of lamp so access to anything outside of the leshan server is difficult and we are currently working on solving this issue. For more information as well as what we have attempted please check the issues.
