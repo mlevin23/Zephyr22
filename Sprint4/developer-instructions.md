@@ -13,4 +13,4 @@ http://ec2-3-17-62-112.us-east-2.compute.amazonaws.com/
 
 To log in the username is: "test" and the password is: "pass"
 
-While we were not able to make any progress on connecting the backend to the front end, the front end has been fully completed with a working server log page.
+While we were not able to make any progress on connecting the backend to the front end, the front end has been fully completed with a working server log page. For more information look into the README.md.
