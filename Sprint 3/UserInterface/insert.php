@@ -24,7 +24,7 @@ if($type == 'appliance'){
 }
 
 if($type == 'temperature'){
-    $txt = "The temperature for ".$name." is set to ".$valuel;
+    $txt = "The temperature for ".$name." is set to ".$value;
 }
 
 $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);

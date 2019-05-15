@@ -7,7 +7,7 @@
 </head>
 <body class="backGround">
     <div class="topnav">
-        <a href="index.php">Home</a>
+        <a class="active" href="index.php">Home</a>
         <a href="Lighting.php">Lighting</a>
         <a href="Appliances.php">Appliances</a>
         <a href="Temperature.php">Temperatures</a>
@@ -17,7 +17,7 @@
     <div>
         <h1 class="header">Log</h1>
     </div>
-    <textarea id="ourLog" readonly rows="100" cols="100"></textarea>
+    <textarea id="ourLog" readonly rows="40" cols="100"></textarea>
     <script>
         function loadFile(filePath) {
         var result = null;

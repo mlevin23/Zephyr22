@@ -51,8 +51,8 @@ div.pageWidget {
 }
 
 .backGround {
-    height: 100vh;
-    min-height: 100vh;
+    height: 135vh;
+    min-height: 135vh;
     background-color: lightblue;
     background-image: linear-gradient(lightblue, Dodgerblue);
 }
