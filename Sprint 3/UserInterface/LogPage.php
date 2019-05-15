@@ -31,7 +31,7 @@
         }
 
         var myStuff = loadFile("data.txt");
-        alert(myStuff);
+        document.getElementById("ourLog").value=myStuff;
     </script>
     
 </body>
