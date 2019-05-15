@@ -1,49 +1,6 @@
-<<<<<<< Updated upstream
-12345outputted successfully
-outputted successfully
-outputted successfully
-outputted successfully
-outputted successfully
-outputted successfully
-okay
-0
-The button name and is okay
-The button  and is asdf
-The button masterBedroom and is asdf
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is on
-The button masterBedroom and is 
-The button masterBedroom and is 
-The button masterBedroom and is 
-The button masterBedroom and is 
-The button masterBedroom and is true
-The button masterBedroom and is false
-The button masterBedroom and is true
-The button masterBedroom and is false
-=======
-Fuck 
-Mouse
-user id date
-user id date
-user id date
-user id date
-user id date
-user id date
-user id date
-user id date
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
->>>>>>> Stashed changes
+The oven is on
+The oven is off
+The coffee maker is on
+The coffee maker is off
+The bottle warmer is on
+The bottle warmer is off
