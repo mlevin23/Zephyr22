@@ -1,7 +1,3 @@
-<?php
-$txt = "test";
-$myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
-?>
 
 <!DOCTYPE html>
 <html>
@@ -38,11 +34,11 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
 //           }
 //         });
 //        }
-    function create() {    
+    function create(ID) {    
     $.ajax({
         url: 'insert.php',
         type: 'POST',
-        data: { name: "name", value: "okay"},
+        data: { name: ID, value: document.getElementById(ID).checked},
         success: function(response) { console.log(response); }
     });
     }
@@ -68,7 +64,7 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
         <h3 class="myHeaders">Upstairs</h3>
         <p class="myText">Master Bedroom</p>
         <label class="switch">
-            <input id="masterBedroom" type="checkbox">
+            <input onclick="create('masterBedroom')" id="masterBedroom" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Bathroom</p>
