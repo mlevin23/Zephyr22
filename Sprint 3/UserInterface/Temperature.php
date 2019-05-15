@@ -43,16 +43,10 @@
    
 
     </div>
-<<<<<<< Updated upstream
-	
-	<div>
-        <input type ="number"
-               id="temp" name="temp"
-               min="50" max="85" >
-    </div>
+
 </body>
 </html>
-=======
+
 
     <div>
 
@@ -163,4 +157,4 @@
 </body>
 
 </html>
->>>>>>> Stashed changes
+
