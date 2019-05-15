@@ -14,3 +14,5 @@ http://ec2-3-17-62-112.us-east-2.compute.amazonaws.com/
 To log in the username is: "test" and the password is: "pass"
 
 While we were not able to make any progress on connecting the backend to the front end, the front end has been fully completed with a working server log page. For more information look into the README.md.
+
+To see the source code for our front end, visit the userInterface folder in the sprint 4 folder, and for the backend visit the Sprint 3 folder and the leshan-server-demo.jar. If opened with a package manager, inside the webApp folder you will find the index.html file with the work done on the backend.
