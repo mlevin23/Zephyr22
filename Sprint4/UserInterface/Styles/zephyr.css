@@ -1,0 +1,156 @@
+.header {
+    text-align: center;
+    font-size: 75px;
+    color: black;
+}
+
+.headerAbout {
+    text-align: center;
+    font-size: 75px;
+    color: black;
+}
+
+#loginWidget {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+#loginWidget > h2 {
+    margin: 0;
+    padding: 2px;
+}
+#loginWidget form {
+    background-color: black;
+    border: 1px solid dodgerblue;
+    color: white;
+    padding: 0.5em 0;
+    border-radius: 0 0 10px 10px;
+}
+#loginWidget form label {
+    width: 95px;
+    text-align: right;
+    display: inline-block;
+}
+#loginWidget div.stack {
+    margin: 1em 0;
+}
+div.ui-state-error {
+    padding: 4px 0;
+}
+div.pageWidget {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.backGround {
+    height: 135vh;
+    min-height: 135vh;
+    background-color: lightblue;
+    background-image: linear-gradient(lightblue, Dodgerblue);
+}
+
+#homePlaque {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.boxed {
+    display: block;
+    text-align: left;
+    float: left;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 25px;
+}

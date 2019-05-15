@@ -1,0 +1,9 @@
+The light MasterBedroom is on at 01:17:57pm 15/05/2019
+The light MasterBedroom is of at 01:17:57pm 15/05/2019
+The light DiningRoom is on at 01:17:59pm 15/05/2019
+The light MainLight is on at 01:18:01pm 15/05/2019
+The light MainLight is of at 01:18:02pm 15/05/2019
+The oven is on at 01:18:04pm 15/05/2019
+The temperature for Evening is set to 67 at time 01:18:07pm 15/05/2019
+The temperature for Evening is set to 66 at time 01:18:07pm 15/05/2019
+The temperature for Nursery is set to 69 at time 01:18:09pm 15/05/2019
