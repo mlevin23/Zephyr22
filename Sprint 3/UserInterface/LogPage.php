@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
     <script> 
-        function fillTextArea(){
-            const fs = require('fs') 
-  
-            fs.readFile('data.txt', (err, data) => { 
-                if (err) throw err;   
-                //console.log(data.toString()); 
-                document.getElementById("ourLog").value = data.toString();
-            })   
-        } 
+        function loadFile() {
+            var result = null;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "data.txt", false);
+            xmlhttp.send();
+            if (xmlhttp.status==200) {
+                result = xmlhttp.responseText;
+            }
+            return result;
+        }
+        document.getElementById("ourLog").value=loadFile();
     </script> 
 </head>
-<body class="backGround" onload="fillTextArea()">
+<body class="backGround">
     <div class="topnav">
         <a class="active" href="index.php">Home</a>
         <a href="Lighting.php">Lighting</a>
