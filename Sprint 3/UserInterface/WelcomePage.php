@@ -11,6 +11,7 @@
         <a href="Lighting.php">Lighting</a>
         <a href="Appliances.php">Appliances</a>
         <a href="Temperature.php">Temperatures</a>
+        <a href="LogPage.php">Log</a>
     </div>
     
     <div>

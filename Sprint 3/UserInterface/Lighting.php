@@ -30,6 +30,7 @@
         <a class="active" href="Lighting.php">Lighting</a>
         <a href="Appliances.php">Appliances</a>
         <a href="Temperature.php">Temperature</a>
+        <a href="LogPage.php">Log</a>
     </div>
     <h1 class="headerAbout">Lighting</h1>
     
