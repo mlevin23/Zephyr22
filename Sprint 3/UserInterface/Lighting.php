@@ -1,5 +1,5 @@
 <?php
-$txt = "user id date";
+$txt = "test";
 $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
 ?>
 
@@ -10,6 +10,7 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
     <meta charset="UTF-8">
     <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
     <link href="Styles/verticalTabs.css" rel="stylesheet" type="text/css">
+    <script src="jquery-2.1.0.min.js"></script>
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -18,7 +19,6 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
-
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -27,6 +27,25 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+//    function create (ID) {
+//          $.ajax({
+//            url:"insert.php", //the page containing php script
+//            type: "post", //request type,
+//            dataType: 'json',
+//            data: {name: "ID", value: "test1"},
+//            success:function(result){
+//                console.log(result.abc);
+//           }
+//         });
+//        }
+    function create() {    
+    $.ajax({
+        url: 'insert.php',
+        type: 'POST',
+        data: { name: "name", value: "okay"},
+        success: function(response) { console.log(response); }
+    });
+    }
     </script>
 </head>
 <body class="backGround" onload="openTab(event, 'Upstairs')">
@@ -38,7 +57,7 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
         <a href="LogPage.php">Log</a>
     </div>
     <h1 class="headerAbout">Lighting</h1>
-    
+    <button type="button" onclick="create()">Click Me</button>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Upstairs')">Upstairs</button>
         <button class="tablinks" onclick="openTab(event, 'Ground')">Ground</button>
@@ -49,7 +68,7 @@ $myfile = file_put_contents('data.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
         <h3 class="myHeaders">Upstairs</h3>
         <p class="myText">Master Bedroom</p>
         <label class="switch">
-            <input type="checkbox">
+            <input id="masterBedroom" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Bathroom</p>
