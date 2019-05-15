@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,22 +22,11 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-//    function create (ID) {
-//          $.ajax({
-//            url:"insert.php", //the page containing php script
-//            type: "post", //request type,
-//            dataType: 'json',
-//            data: {name: "ID", value: "test1"},
-//            success:function(result){
-//                console.log(result.abc);
-//           }
-//         });
-//        }
-    function create(ID) {    
+    function create(ID, TYPE) {    
     $.ajax({
         url: 'insert.php',
         type: 'POST',
-        data: { name: ID, value: document.getElementById(ID).checked},
+        data: { name: ID, value: document.getElementById(ID).checked, type: TYPE},
         success: function(response) { console.log(response); }
     });
     }
@@ -53,7 +41,6 @@
         <a href="LogPage.php">Log</a>
     </div>
     <h1 class="headerAbout">Lighting</h1>
-    <button type="button" onclick="create()">Click Me</button>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Upstairs')">Upstairs</button>
         <button class="tablinks" onclick="openTab(event, 'Ground')">Ground</button>
@@ -64,12 +51,12 @@
         <h3 class="myHeaders">Upstairs</h3>
         <p class="myText">Master Bedroom</p>
         <label class="switch">
-            <input onclick="create('masterBedroom')" id="masterBedroom" type="checkbox">
+            <input onclick="create('MasterBedroom', 'light')" id="MasterBedroom" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Bathroom</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('Bathroom', 'light')" id="Bathroom" type="checkbox">
             <span class="slider round"></span>
         </label>
     </div>
@@ -78,22 +65,22 @@
         <h3 class="myHeaders">Ground</h3>
         <p class="myText">Kitchen</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('Kitchen', 'light')" id="Kitchen" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Dining Room</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('DiningRoom', 'light')" id="DiningRoom" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Living Room</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('LivingRoom', 'light')" id="LivingRoom" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Porch</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('Porch', 'light')" id="Porch" type="checkbox">
             <span class="slider round"></span>
         </label>
     </div>
@@ -102,12 +89,12 @@
         <h3 class="myHeaders">Basement</h3>
         <p class="myText">Stair Light</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('StairLight', 'light')" id="StairLight" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p class="myText">Main Light</p>
         <label class="switch">
-            <input type="checkbox">
+            <input onclick="create('MainLight', 'light')" id="MainLight" type="checkbox">
             <span class="slider round"></span>
         </label>
     </div>
