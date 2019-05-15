@@ -20,5 +20,11 @@
     <div id="homePlaque">
         <p></p>
     </div>
+	
+	<div>
+        <input type ="number"
+               id="temp" name="temp"
+               min="50" max="85" >
+    </div>
 </body>
 </html>
