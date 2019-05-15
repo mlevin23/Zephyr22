@@ -4,19 +4,6 @@
 	<title>Log</title>
     <meta charset="UTF-8">
     <link href="Styles/Zephyr.css" rel="stylesheet" type="text/css">
-    <script> 
-        function loadFile() {
-            var result = null;
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "data.txt", false);
-            xmlhttp.send();
-            if (xmlhttp.status==200) {
-                result = xmlhttp.responseText;
-            }
-            return result;
-        }
-        document.getElementById("ourLog").value=loadFile();
-    </script> 
 </head>
 <body class="backGround">
     <div class="topnav">
@@ -31,5 +18,21 @@
         <h1 class="header">Log</h1>
     </div>
     <textarea id="ourLog" readonly rows="100" cols="100"></textarea>
+    <script>
+        function loadFile(filePath) {
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+        result = xmlhttp.responseText;
+        }
+        return result;
+        }
+
+        var myStuff = loadFile("data.txt");
+        alert(myStuff);
+    </script>
+    
 </body>
 </html>
