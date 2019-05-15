@@ -7,7 +7,7 @@
 </head>
 <body class="backGround">
     <div class="topnav">
-        <a class="active" href="index.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="Lighting.php">Lighting</a>
         <a href="Appliances.php">Appliances</a>
         <a href="Temperature.php">Temperatures</a>

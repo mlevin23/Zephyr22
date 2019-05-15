@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 12345outputted successfully
 outputted successfully
 outputted successfully
@@ -24,3 +25,25 @@ The button masterBedroom and is true
 The button masterBedroom and is false
 The button masterBedroom and is true
 The button masterBedroom and is false
+=======
+Fuck 
+Mouse
+user id date
+user id date
+user id date
+user id date
+user id date
+user id date
+user id date
+user id date
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+>>>>>>> Stashed changes
